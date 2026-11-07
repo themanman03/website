@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="../world.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UwU</title>
+
+<style>
+
+#si{background-color: aqua; left: 35% ;transition:2s;  z-index:100; animation:ana 1s infinite alternate; animation-delay:3s;}
+#no{background-color: red; left: 55% ;transition:0.3s;}
+#si:hover{width: 12.5em;height: 7.3em; font-size:2em;}
+
+button{width: 12em;height: 7em; position: fixed; top:20%; }
+
+
+
+
+@keyframes ana {
+  from {width: 12em;height: 7em; top:20%;}
+  to {font-size:2em;}
+}
+
+
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: lightblue;
+  }
+
+
+@keyframes ana {
+  from {font-size:0.9em;}
+  to {font-size:1em;}
+}
+
+
+button{width: 10em;height: 5em; }
+
+  
+  #si{
+  background-color: aqua; left: 35% ;}
+  
+#no{
+background-color: red; left: 35%; top: 50% ;}
+
+  
+  
+  
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body align="center">
+    
+<button id="si" onclick="uwu()"> <h1> YES </h1></button>
+<button id="no" onmouseover="diquesi()"> <h1> no </h1></button>
+
+
+<script>
+
+var si = document.getElementById('si');
+var no = document.getElementById('no');
+var z = 0;
+var k = 0;
+
+function diquesi() {
+
+    if(z<50){
+var x = Math.random()*90;
+var y = Math.random()*90;
+
+no.style.left= x+'%';
+no.style.top= y+'%';
+
+z++;
+    }else{
+        // no.innerHTML=si;
+no.innerHTML="<h1 onclick='uwu();'>YES</h1>";
+no.style.backgroundColor="aqua";
+no.setAttribute("onclick", "uwu()")
+
+//no.addEventListener("click", uwu);  
+
+
+}
+
+}
+
+function uwu() {
+    
+document.body.innerHTML="<h1 >I known you would say YES 😎</h1>";
+
+
+
+}
+
+
+
+
+</script>
+
+</body>
+<a href="../home/home.html" class="homebutton">home</a>
+
+</html>

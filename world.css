@@ -1,0 +1,17 @@
+.homebutton {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 40px;
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 7px 6px 10px black;
+    transition: all 0.3s ease;
+    display: inline-block;
+    animation-fill-mode: forwards;
+}
